@@ -1,5 +1,5 @@
 %define upstream_name    Pod-Elemental-PerlMunger
-%define upstream_version 0.093020
+%define upstream_version 0.093330
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
