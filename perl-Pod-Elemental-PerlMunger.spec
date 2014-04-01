@@ -1,15 +1,16 @@
 %define upstream_name    Pod-Elemental-PerlMunger
-%define upstream_version 0.093333
+%define upstream_version 0.200002
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	A thing that takes a string of Perl and rewrites its documentation
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Elemental-PerlMunger-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Pod/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Moose)
@@ -55,5 +56,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Nov 07 2009 cpan2dist 0.093020-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
